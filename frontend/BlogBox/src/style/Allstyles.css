@@ -8,7 +8,7 @@
 .custom-navbar .navbar-brand {
   font-weight: bold;
   font-size: 24px;
-  color: #0fe2f1; 
+  color: #0fe2f1;
   text-decoration: none;
 }
 
@@ -35,23 +35,21 @@
   background-color: #c0392b;
 }
 
-
 /* card styles */
-.containerStyle{
-    min-height:100vh;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-    padding:40px;
-  };
+.containerStyle {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 40px;
+}
 
-   .noBlogStyle{
-    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
-    color: #333;
-    text-align: center;
-    padding: 60px;
-    border-radius: 20px;
-    margin-top: 100px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    box-Shadow: 0 5px 20px rgba(0,0,0,0.2);
-    
-  };
+.noBlogStyle {
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  color: #333;
+  text-align: center;
+  padding: 60px;
+  border-radius: 20px;
+  margin-top: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}

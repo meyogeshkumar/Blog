@@ -1,24 +1,23 @@
 const express = require("express");
-const env = require("dotenv");
-const cors = require("cors");
+const env = require("dotenv")
+env.config()
+const cors = require("cors")
+const app = express();
 const connect = require("./Database/db");
+const User = require("./schema/userSignupDetails");
 const userSignlogrouter = require("./routes/userSignlogroutes");
 const Blogroute = require("./routes/Blogroutes");
 
-env.config();
 
-const app = express();
-
-
-app.use(cors());
+app.use(cors())
 app.use(express.json());
-
 
 connect();
 
+app.use(userSignlogrouter)
 
-app.use("/api/user", userSignlogrouter);
-app.use("/api/blog", Blogroute);
+app.use(Blogroute)
 
-
-module.exports = app;
+app.listen(process.env.PORT_NO, () => {
+  console.log("server is start");
+})
